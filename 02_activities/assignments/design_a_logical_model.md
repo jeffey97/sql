@@ -34,7 +34,7 @@ Your answer
 
 1.Adventure works architecture is much more complex and uses specialized entities than the small book store logical model.
 
-2.Adventure works uses a higher level of normalization and has more detailed information than the book store model. This architecture is modular and in turn allows for more specific queries.
+2.Adventure works uses a higher level of normalization and has more detailed information than the book store model. Adventure works model is modular and in turn allows for more specific queries.
 
 # Criteria
 
