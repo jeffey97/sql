@@ -7,14 +7,14 @@ At the minimum it should have employee, order, sales, customer, and book entitie
 ![Logical model-small book store](<Logical model _small book store.jpeg>)
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
-[Logical model with shift table](<Question_2-Logical model _small book store-1.jpeg>)
+![Logical model with shift table](<Question_2-Logical model _small book store-1.jpeg>)
 
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
-[Logical model-Type 1 (SCD)](<Question_3a-Logical model _small book store.jpeg>)
-[Logical model-Type 2 (SCD)](<Question_3b-Logical model _small book store.jpeg>)
+![Logical model-Type 1 (SCD)](<Question_3a-Logical model _small book store.jpeg>)
+![Logical model-Type 2 (SCD)](<Question_3b-Logical model _small book store.jpeg>)
 
 Bonus: Are there privacy implications to this, why or why not?
 Yes there will be privacy implications.
