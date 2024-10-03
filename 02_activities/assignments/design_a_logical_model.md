@@ -4,27 +4,37 @@
 Create a logical model for a small bookstore. 📚
 
 At the minimum it should have employee, order, sales, customer, and book entities (tables). Determine sensible column and table design based on what you know about these concepts. Keep it simple, but work out sensible relationships to keep tables reasonably sized. Include a date table. There are several tools online you can use, I'd recommend [_Draw.io_](https://www.drawio.com/) or [_LucidChart_](https://www.lucidchart.com/pages/).
-
+![Logical model-small book store](<Logical model _small book store.jpeg>)
 ## Question 2
 We want to create employee shifts, splitting up the day into morning and evening. Add this to the ERD.
+![Logical model with shift table](<Question_2-Logical model _small book store-1.jpeg>)
 
 ## Question 3
 The store wants to keep customer addresses. Propose two architectures for the CUSTOMER_ADDRESS table, one that will retain changes, and another that will overwrite. Which is type 1, which is type 2?
 
 _Hint, search type 1 vs type 2 slowly changing dimensions._
+![Logical model-Type 1 (SCD)](<Question_3a-Logical model _small book store.jpeg>)
+![Logical model-Type 2 (SCD)](<Question_3b-Logical model _small book store.jpeg>)
 
 Bonus: Are there privacy implications to this, why or why not?
-```
+Yes there will be privacy implications.
+
 Your answer...
-```
+
+Type 1 (SCD) stores only the current address which reduces privacy risks and at the same time it does not have historical data.
+
+Type 2 (SCD) keeps all past addresses, increasing privacy risks and requiring stricter data protection and retention policies.
 
 ## Question 4
 Review the AdventureWorks Schema [here](https://imgur.com/a/u0m8fX6)
 
 Highlight at least two differences between it and your ERD. Would you change anything in yours?
-```
-Your answer...
-```
+
+Your answer
+
+1.Adventure works architecture is much more complex and uses specialized entities than the small book store logical model.
+
+2.Adventure works uses a higher level of normalization and has more detailed information than the book store model. Adventure works model is modular and in turn allows for more specific queries.
 
 # Criteria
 
